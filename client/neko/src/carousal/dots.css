@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #ab70e2; /* Purple */
+    --secondary-color: #b200e8; /* Indigo */
+    --text-color: #ffffff; /* White */
+    
+  }
+/* CSS for dots container */
+.dotsContainer {
+    position: absolute;
+    bottom: 85px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  .dotsContainer button {
+    padding: 8px 20px;
+    background-color: #ad72e3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  /* CSS for individual dots */
+  .carousel-dots {
+    height: 3px;
+    width: 20px;
+    border: none;
+    
+    background-color: var(--secondary-color); /* Default color for dots */
+    border-radius: 40px; /* Make dots circular */
+    margin: 0 5px; /* Add space between dots */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Active dot */
+  .carousel-dots.active {
+    width: 50px;
+    background-color:var(--primary-color)/* Change color of active dot */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .dotsContainer {
+      bottom: 10px; /* Adjust vertical position for smaller screens */
+    }
+  }
+  

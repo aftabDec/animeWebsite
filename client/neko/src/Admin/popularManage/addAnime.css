@@ -1,0 +1,64 @@
+/* AddAnime.css */
+
+.add-anime-container {
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    padding: 50px;
+    background-color: rgb(33, 33, 33);
+  }
+  
+  .add-anime-container h2 {
+    font-size: 24px;
+    color: #6f00ff; /* Dark purple */
+    margin-bottom: 20px;
+  }
+  
+  .add-anime-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-anime-container .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .add-anime-container label {
+    font-size: 18px;
+    color: #ffffff; /* Dark purple */
+  }
+  
+  .add-anime-container input[type="file"],
+  .add-anime-container input[type="text"],
+  .add-anime-container textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4a4585; /* Purple */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-anime-container input[type="file"]:focus,
+  .add-anime-container input[type="text"]:focus,
+  .add-anime-container textarea:focus {
+    border-color: #4b0082; /* Dark purple */
+  }
+  
+  .add-anime-container textarea {
+    resize: vertical;
+  }
+  
+  .add-anime-container button {
+    padding: 12px 24px;
+    background-color: #8a2be2; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-anime-container button:hover {
+    background-color: #4b0082; /* Dark purple */
+  }
+  

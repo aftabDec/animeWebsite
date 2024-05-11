@@ -1,0 +1,27 @@
+
+body {
+  margin: 0;
+  background: rgb(16, 2, 21);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.Toastify__toast--warning {
+  background: #FFE8BC !important;
+}
+.Toastify__toast--error {
+  background: #1d0a2c !important;
+}
+.toastBody {
+  font-family: 'Fira Sans', sans-serif;
+  color: #ffffff; /* #10171D */
+  font-size: 1rem !important;
+}
+.toastProgress {
+  background: #333F48 !important;
+}

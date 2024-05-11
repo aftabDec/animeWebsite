@@ -1,0 +1,121 @@
+/* AdminPage.css */
+
+.admin-container {
+    display: flex;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .admin-sidebar {
+    width: 20%;
+    height: 92vh;
+    min-width: 200px; /* Set a minimum width for the sidebar */
+    background-color: #33004c;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .admin-sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+  /* AdminPage.css */
+
+.admin-sidebar ul li a {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underline */
+}
+
+
+  .admin-sidebar ul li {
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+    padding-left: 10px;
+  }
+  
+  .admin-sidebar ul li:hover {
+    background-color: #46007c;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    padding-top: 50px;
+  }
+  
+  /* Media query for responsive layout */
+  @media screen and (max-width: 768px) {
+    .admin-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .admin-sidebar {
+      width: 100%; /* Take up full width on small screens */
+      min-width: unset; /* Remove minimum width */
+      padding: 10px; /* Reduce padding */
+      margin-bottom: 20px; /* Add margin to separate from content */
+    }
+  
+    .admin-content {
+      padding-top: 20px; /* Adjust padding */
+    }
+  }
+  /* NavigationBar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 21%;
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #673ab7; /* Purple background color */
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-link{
+  list-style: none;
+  
+  color: white; /* Use the parent color */
+  text-decoration: none; 
+}
+
+
+
+.navbar-icon {
+  margin-right: 5px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  padding: 8px;
+  font-size: 16px;
+  color: #fff; /* White text color */
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent white placeholder text color */
+}
+
+.search-icon {
+  color: #fff; /* White search icon color */
+  margin-left: 10px;
+}

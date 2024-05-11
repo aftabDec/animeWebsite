@@ -1,0 +1,71 @@
+.contact-form-container {
+    background-color: rgba(26, 26, 26, 0.9); /* Dark theme with slight visibility */
+    color: #ffffff; /* White text color */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .contact-image {
+    width: 40%; /* Adjust the width of the image */
+    height: auto;
+    left: 10px;
+    padding-top: 10%;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .form-container {
+    flex: 1; /* Take remaining width */
+    padding: 20px;
+    padding-top: 10%;
+    position: relative;
+    right: 10%;
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+ .form-group input[type="text"],
+ .form-group  input[type="email"],
+  .form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #4b0082; /* Purple border */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text color */
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  .CButton{
+    display:flex;
+    gap: 10px;
+  }
+  .CButton  button{
+    
+    background-color: #8a2be2; /* Purple button */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CButton button:hover {
+    background-color: #7b00fe; /* Darker Purple */
+  }
+  

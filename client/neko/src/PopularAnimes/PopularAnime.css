@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #8a2be2; /* Purple */
+    --secondary-color: #4b0082; /* Indigo */
+    --text-color: #ffffff; /* White */
+  }
+  .PopularAnimeList {
+    z-index: 1;
+    position: relative;
+    margin-top: 25px;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+   flex-wrap: wrap;
+    top: -27px;
+  }
+    
+  /* Popular Anime Section */
+.PopularAnimeSec {
+    display: block;
+
+    margin-bottom: -34px;
+    padding-left: 50px;
+    position: relative;
+  }
+  
+.PopularAnimeSec h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: -15px;
+  }
+.PopularAnimeSec p {
+  font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(183, 183, 183);
+    padding-right: 24px;
+    margin-top: 19px;
+  }
+/* Button inside .PopularAnimeSec */
+.PopularAnimeSec button {
+    position: absolute;
+    z-index: 2;
+    right: 60px;
+    margin-top: -53px;
+    background-color: var(--primary-color); /* Button background color */
+    color: var(--text-color); /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for button */
+  }
+/* Hover effect for button */
+.PopularAnimeSec button:hover {
+    background-color: #4b0082; /* Change background color on hover */
+  }
+
+   /* Popular Anime Item */
+   .popularAnimeitem {
+   
+  
+    cursor: pointer;
+    margin: 10px;
+    grid-gap: -1vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .popularAnimeitem img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+  }
+  .popularAnimeitem img:hover{
+    opacity: .5;
+  }  
+
+  .popularAnimeitem .PopularTitle {
+    font-size: 0.97rem;
+    font-family: var(--font-family);
+    margin-bottom: 2px;
+    margin-left: 4px;
+    width: 10rem;
+  }
+  
+  .popularAnimeitem .PopularLang{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-family: var(--font-family);
+    margin-left: 4px;
+    color: #b0b0b0;
+  }  
+  .PopularAnimeSec{
+    position: relative;
+    top: -16px;
+  }

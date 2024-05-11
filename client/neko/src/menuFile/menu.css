@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --primary-color: #8a2be2; /* Purple */
+    --secondary-color: #4b0082; /* Indigo */
+    --text-color: #ffffff; /* White */
+    --font-family: 'Fira Sans', sans-serif;
+  }
+.menu{
+    
+    display: flex;
+    align-items: center;
+    background-color:rgb(23, 0, 29);
+    width: 25%;
+    overflow: hidden;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 4;
+    box-shadow: 2px 1px rgb(91, 91, 91);
+    color: aliceblue;
+    left: -300px;
+    height: 100vmin;
+    transition: left 0.3s ease;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu.show {
+left: 0;
+  }
+.menu-container{
+    display: flex; 
+    flex-direction: column;
+    padding: 3rem; 
+    
+}
+.left a, .right a{
+    text-decoration: none;
+    color: white;
+   
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    text-align: center;
+}
+.left{
+    display: grid;
+    margin-top:200%;
+    cursor: pointer;
+    grid-template-columns: repeat(1,1fr);
+}
+
+/* Scrollbar styling */
+.menu::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f; /* Dark gray scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background-color: #7f7f7f; /* Lighter scrollbar thumb on hover */
+}
+.left p {
+    background-color: rgba(47, 26, 65, 0.98); /* Light black background */
+    padding: 0.5rem; 
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 2rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    font-family: 'Fira Sans', sans-serif;
+}
+.left p:hover {
+    background-color:rgb(140, 0, 255);
+    padding: 0.5rem; 
+    padding-left: 1.4rem;
+}
+
